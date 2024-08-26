@@ -1,0 +1,239 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main-container {
+    width: 442px;
+    height: 581px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-header {
+    width: 153px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 21.08px;
+    line-height: 25.51px;
+    text-align: center;
+    color: #FF6B82;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.offer-container .box-container {
+    width: 342px;
+    height: 74px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 4px 0px #A7A7A740;      
+    border-radius: 12px;
+    border: 0.9px;
+    display: flex;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.box-container:hover {
+    border: 0.9px solid #FF6B82;
+    background-color: #FFF9FA;
+    cursor: pointer;
+}
+
+.box-container.selected {
+    border: 0.9px solid #FF6B82;
+    background-color: #FFF9FA;
+    cursor: pointer;
+    height: 172px;
+}
+.box-container .badge {
+    width: 70px;
+    height: 100%;
+    background-color: #FF6B82;
+    color: white;
+    border-radius: 12px 0 0 12px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 16.35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.selected .badge {
+    display: none;
+}
+
+
+.box-content {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    gap: 10px;
+    border-left: 2px dashed  #FF6B82;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-price-details{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding:0px 20px 0 20px;
+}
+
+.box-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+.selected .box-content{
+    border-left: none;
+    width: 342px;
+    align-items: start;
+
+}
+
+
+.box-title {
+    font-size: 14.46px;
+    font-weight: 400;
+    line-height: 17.5px;    
+}
+
+.box-price {
+    font-size: 14.46px;
+    font-weight: 600;
+    line-height: 17.5px;    
+}
+
+.box-old-price {
+    font-size: 9.94px;
+    font-weight: 400;
+    line-height: 12.03px;
+    opacity: 42%;
+    text-decoration: line-through;
+}
+
+.select-item-container {
+    display: none;
+    gap:10px;
+    flex-direction: column;
+    
+}
+.selected .select-item-container{
+    display: flex;
+    padding-left: 40px;
+}
+.select-item-container span:first-child{
+    width: 10px;
+}
+.select-item-container span{
+    font-size: 9.94px;
+    font-weight: 400;
+    line-height: 12.03px;
+    width: 65.98px;
+
+
+}
+
+.select-item-row{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.select-box {
+    width: 65.98px;
+}
+
+
+
+.popular-badge {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    color: #FF6B82;
+
+}
+
+.total-price-container {
+    display: flex;
+    width: 342px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-status {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: #FF6B82;
+}
+.total-price {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+
+}
+
+
+.add-to-cart-btn {
+    background-color: #FF6B82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 342px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 14.52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition:  background-color 0.3s ease;
+
+}
+.add-to-cart-btn:hover {
+    background-color: #FF2C31;
+}
+.plus-icon {
+    font-size: 16px;
+}
+
+
+.footer-content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: #D4D4D4;
+
+}
+.pumper{
+    color: #FF2C31;
+    font-weight: 600;
+    line-height: 16.94px;
+}
+
+
